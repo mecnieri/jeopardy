@@ -8,7 +8,7 @@ document.addEventListener("click", function (e) {
     }
     document.getElementById(id + "sum").innerHTML = sum
 });
-
+// lom
 let addplayer = (e) => {
     let name = e.target.name.value;
     let divNode = document.createElement('div')
