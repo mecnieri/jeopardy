@@ -6,7 +6,11 @@ document.addEventListener("click", function(e) {
     let already = Number(document.getElementById(id + "sum").textContent);
     let sum = already + score;
     if (e.target.textContent == 0) {
-      sum = 0;
+      let r = confirm("Do you want to clear a history ? ");
+      if (r == true) {
+        sum = 0;
+        document.getElementById(id + "history").innerHTML = "";
+      }
     }
     document.getElementById(id + "sum").innerHTML = sum;
 
@@ -14,11 +18,8 @@ document.addEventListener("click", function(e) {
     let divNode = document.createElement("div");
     divNode.appendChild(text);
 
-    document.getElementById(id + "history").appendChild(divNode)
-
-
+    document.getElementById(id + "history").appendChild(divNode);
   }
-
 });
 // lom
 let addplayer = e => {
@@ -28,7 +29,7 @@ let addplayer = e => {
   let text = document.createTextNode(name);
 
   let sum = document.createElement("h2");
-  let history = document.createElement("h3")
+  let history = document.createElement("h3");
   let textS = document.createTextNode(0);
 
   for (let i = 0; i <= 5; i++) {
@@ -56,10 +57,9 @@ let addplayer = e => {
   sum.setAttribute("id", name + "sum");
   history.setAttribute("id", name + "history");
 
-
   divNode.setAttribute("id", name);
   divNode.appendChild(sum);
   divNode.appendChild(history);
   document.getElementsByClassName("players")[0].appendChild(divNode);
-   e.target.name.value = ""
+  e.target.name.value = "";
 };
