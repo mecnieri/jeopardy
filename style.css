@@ -1,4 +1,5 @@
 .players {
     display: grid;
-    grid-template-columns: repeat(400, auto);
+    grid-template-columns: repeat(15, auto);
+    grid-gap: 10px;
 }
