@@ -1,5 +1,13 @@
 .players {
-    display: grid;
-    grid-template-columns: repeat(15, auto);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 5px;
+}
+ 
+.history {
+  display: flex;
+  flex-direction: column-reverse;
+}
+button {
+  margin: 1px;
 }

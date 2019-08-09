@@ -56,6 +56,7 @@ let addplayer = e => {
 
   sum.setAttribute("id", name + "sum");
   history.setAttribute("id", name + "history");
+  history.setAttribute("class", "history");
 
   divNode.setAttribute("id", name);
   divNode.appendChild(sum);

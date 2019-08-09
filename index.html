@@ -1,28 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Jeopardy</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="players">
-
-      
+      <div id="zur">
+        <button>0</button>
+        <br />
+        <button>-10</button>
+        <button>+10</button>
+        <br />
+        <button>-20</button>
+        <button>+20</button>
+        <br />
+        <button>-30</button>
+        <button>+30</button>
+        <br />
+        <button>-40</button>
+        <button>+40</button>
+        <br />
+        <button>-50</button>
+        <button>+50</button>
+        <br />
+        <h3 id="zursum">0</h3>
+        <h3>zur</h3>
+        <div id="zurhistory" class="history"></div>
+      </div>
+      <div id="ach">
+        <button>0</button>
+        <br />
+        <button>-10</button>
+        <button>+10</button>
+        <br />
+        <button>-20</button>
+        <button>+20</button>
+        <br />
+        <button>-30</button>
+        <button>+30</button>
+        <br />
+        <button>-40</button>
+        <button>+40</button>
+        <br />
+        <button>-50</button>
+        <button>+50</button>
+        <br />
+        <h3 id="achsum">0</h3>
+        <h3>ach</h3>
+        <div id="achhistory" class="history"></div>
+      </div>
+      <div id="nat">
+        <button>0</button>
+        <br />
+        <button>-10</button>
+        <button>+10</button>
+        <br />
+        <button>-20</button>
+        <button>+20</button>
+        <br />
+        <button>-30</button>
+        <button>+30</button>
+        <br />
+        <button>-40</button>
+        <button>+40</button>
+        <br />
+        <button>-50</button>
+        <button>+50</button>
+        <br />
+        <h3 id="natsum">0</h3>
+        <h3>nat</h3>
+        <div id="nathistory" class="history"></div>
+      </div>
+      <div id="ver">
+        <button>0</button>
+        <br />
+        <button>-10</button>
+        <button>+10</button>
+        <br />
+        <button>-20</button>
+        <button>+20</button>
+        <br />
+        <button>-30</button>
+        <button>+30</button>
+        <br />
+        <button>-40</button>
+        <button>+40</button>
+        <br />
+        <button>-50</button>
+        <button>+50</button>
+        <br />
+        <h3 id="versum">0</h3>
+        <h3>ver</h3>
+        <div id="verhistory" class="history"></div>
+      </div>
+      <div id="bzz">
+        <button>0</button>
+        <br />
+        <button>-10</button>
+        <button>+10</button>
+        <br />
+        <button>-20</button>
+        <button>+20</button>
+        <br />
+        <button>-30</button>
+        <button>+30</button>
+        <br />
+        <button>-40</button>
+        <button>+40</button>
+        <br />
+        <button>-50</button>
+        <button>+50</button>
+        <br />
+        <h3 id="bzzsum">0</h3>
+        <h3>bzz</h3>
+        <div id="bzzhistory" class="history"></div>
+      </div>
     </div>
     <div id="addPlayer">
-        <form onsubmit="event.preventDefault(); addplayer(event)">
-            <input type="text" id="name">
-            <input type="submit" value="Add Player">
-        </form>
+      <form onsubmit="event.preventDefault(); addplayer(event)">
+        <input type="text" id="name" />
+        <input type="submit" value="Add Player" />
+      </form>
     </div>
 
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
