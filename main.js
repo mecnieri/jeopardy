@@ -29,7 +29,7 @@ document.addEventListener("click", function(e) {
       }
     }
     e.target.style.border = "2px solid red";
- F
+ 
     document.getElementById(id + "sum").innerHTML = sum;
 
     let text = document.createTextNode(score);
