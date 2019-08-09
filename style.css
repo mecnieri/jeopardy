@@ -1,13 +1,18 @@
 .players {
+  max-width: 510px;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 5px;
 }
- 
+
 .history {
   display: flex;
   flex-direction: column-reverse;
 }
 button {
   margin: 1px;
+  margin-bottom: 3px;
+}
+h3 {
+  margin: 10px;
 }
