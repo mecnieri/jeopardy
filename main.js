@@ -1,4 +1,20 @@
 document.addEventListener("click", function(e) {
+  let buttons = document.getElementsByTagName("button");
+ 
+  // document
+  //   .getElementsByTagName("button")
+  //   .forEach(b => (b));
+
+  for (b of buttons) {
+    console.log(
+      (b.style = `{  padding: 0;
+      border: none;
+      font: inherit;
+      color: inherit;
+      background-color: transparent;}`)
+    );
+  }
+
   let id = e.target.parentNode.id;
 
   let score = Number(e.target.textContent);
@@ -12,6 +28,8 @@ document.addEventListener("click", function(e) {
         document.getElementById(id + "history").innerHTML = "";
       }
     }
+    e.target.style.border = "2px solid red";
+ F
     document.getElementById(id + "sum").innerHTML = sum;
 
     let text = document.createTextNode(score);

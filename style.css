@@ -12,7 +12,10 @@
 button {
   margin: 1px;
   margin-bottom: 3px;
+  outline: none;
 }
 h3 {
   margin: 10px;
 }
+
+ 
