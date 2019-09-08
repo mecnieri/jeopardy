@@ -47,7 +47,7 @@ let addplayer = e => {
   let text = document.createTextNode(name);
 
   let sum = document.createElement("h3");
-  let history = document.createElement("h3");
+  let history = document.createElement("div");
   let textS = document.createTextNode(0);
 
   for (let i = 0; i <= 5; i++) {
