@@ -43,10 +43,10 @@ document.addEventListener("click", function(e) {
 let addplayer = e => {
   let name = e.target.name.value;
   let divNode = document.createElement("div");
-  let h1Node = document.createElement("h1");
+  let h1Node = document.createElement("h3");
   let text = document.createTextNode(name);
 
-  let sum = document.createElement("h2");
+  let sum = document.createElement("h3");
   let history = document.createElement("h3");
   let textS = document.createTextNode(0);
 
@@ -66,6 +66,8 @@ let addplayer = e => {
     }
     divNode.appendChild(br);
   }
+  divNode.appendChild(sum);
+  divNode.setAttribute("id", name);
 
   sum.appendChild(textS);
   history.appendChild(textS);
@@ -76,8 +78,7 @@ let addplayer = e => {
   history.setAttribute("id", name + "history");
   history.setAttribute("class", "history");
 
-  divNode.setAttribute("id", name);
-  divNode.appendChild(sum);
+
   divNode.appendChild(history);
   document.getElementsByClassName("players")[0].appendChild(divNode);
   e.target.name.value = "";
