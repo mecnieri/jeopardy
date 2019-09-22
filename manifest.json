@@ -4,22 +4,13 @@
     "icons": [
       {
         "src": "./united.png",
-        "size": "64x64",
+        "size": "64x64 48x48 32x32",
         "type": "image/png"
-      },
-      {
-        "src": "./united.png",
-        "size": "48x48",
-        "type": "image/png"
-      },
-      {
-        "src": "./united.png",
-        "size": "32x32",
-        "type": "image/png"
-      }
+      } 
     ],
     "start_url": ".",
     "display": "fullscreen",
+    "orientation": "landscape",
     "theme_color": "red",
     "background_color": "green"
   }
