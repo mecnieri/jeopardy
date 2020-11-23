@@ -1,9 +1,10 @@
 .players {
   max-width: 710px;
-  display: grid;
-  grid-template-columns: repeat(8, auto);
-  grid-gap: 5px;
-}
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+ }
 
 .history {
   display: flex;
@@ -16,4 +17,5 @@ button {
 }
 h3 {
   margin: 10px;
+ 
 }
